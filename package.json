@@ -27,7 +27,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "@types/spectacle": "^5.2.3"
-  }
+  "devDependencies": {}
 }
