@@ -2,43 +2,27 @@ import React from 'react'
 
 import { Deck } from 'spectacle'
 
-import createTheme from 'spectacle/lib/themes/default'
+import { theme } from './theme'
+
 import { AboutMe } from './slides/about-me'
+import { AboutLindsey } from './slides/a11y-with-Lindsey'
+import { AboutHeadings } from './slides/headings'
 import { Contrast, ContrastQuote } from './slides/contrast'
 import { Intro } from './slides/intro'
 import { InputLabels } from './slides/input-labels'
 import { OutlineIntro } from './slides/outline'
+import { Questions } from './slides/end-questions'
 
-require('normalize.css')
-
-const theme = createTheme(
-  {
-    primary: '#fff',
-    secondary: '#4d4a4a',
-    tertiary: '#03A9FC',
-    quaternary: '#fc9220'
-  },
-  {
-    primary: 'Montserrat',
-    secondary: 'Helvetica'
-  }
+export default () => (
+  <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
+    <Intro />
+    <AboutMe />
+    <AboutLindsey />
+    <Contrast />
+    <AboutHeadings />
+    <ContrastQuote />
+    <InputLabels />
+    <OutlineIntro />
+    <Questions />
+  </Deck>
 )
-
-export default class Presentation extends React.Component {
-  render() {
-    return (
-      <Deck
-        transition={['zoom', 'slide']}
-        transitionDuration={500}
-        theme={theme}
-      >
-        <Intro />
-        <AboutMe />
-        <Contrast />
-        <ContrastQuote />
-        <InputLabels />
-        <OutlineIntro />
-      </Deck>
-    )
-  }
-}
