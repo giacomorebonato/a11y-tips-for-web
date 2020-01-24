@@ -17,7 +17,7 @@ export const AboutMe = () => (
     </Heading>
     <Layout>
       <Fill>
-        <Image src={require('./me.jpg')} />
+        <Image src='/images/me.jpg' />
       </Fill>
       <Fill>
         <br />
