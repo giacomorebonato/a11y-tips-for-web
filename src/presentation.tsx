@@ -1,29 +1,22 @@
 import React from 'react'
 
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text
-} from 'spectacle'
+import { Deck } from 'spectacle'
 
 import createTheme from 'spectacle/lib/themes/default'
-import { AboutMe } from './slides/AboutMe'
-import { Intro } from './slides/Intro'
+import { AboutMe } from './slides/about-me'
+import { Contrast, ContrastQuote } from './slides/contrast'
+import { Intro } from './slides/intro'
+import { InputLabels } from './slides/input-labels'
+import { OutlineIntro } from './slides/outline'
 
 require('normalize.css')
 
 const theme = createTheme(
   {
-    primary: 'white',
-    secondary: '#1F2022',
+    primary: '#fff',
+    secondary: '#4d4a4a',
     tertiary: '#03A9FC',
-    quaternary: '#CECECE'
+    quaternary: '#fc9220'
   },
   {
     primary: 'Montserrat',
@@ -41,52 +34,10 @@ export default class Presentation extends React.Component {
       >
         <Intro />
         <AboutMe />
-        <Slide transition={['zoom']} bgColor='primary'>
-          <Heading size={1} fit caps lineHeight={1} textColor='secondary'>
-            Spectacle Boilerplate
-          </Heading>
-          <Text margin='10px 0 0' textColor='tertiary' fit bold>
-            open the presentation/index.js file to get started
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor='tertiary'>
-          <Heading size={6} textColor='primary' caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor='secondary'>
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor='secondary'>
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor='secondary'>
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor='secondary'>
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor='secondary'>
-            Heading 5
-          </Heading>
-          <Text textColor='secondary'>Standard text</Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
-          <Heading size={6} textColor='secondary' caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor='secondary' textColor='primary'>
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
+        <Contrast />
+        <ContrastQuote />
+        <InputLabels />
+        <OutlineIntro />
       </Deck>
     )
   }

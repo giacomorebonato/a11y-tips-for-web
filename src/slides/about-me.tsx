@@ -17,12 +17,14 @@ export const AboutMe = () => (
     </Heading>
     <Layout>
       <Fill>
-        <Image src='/images/me.jpg' />
+        <Image src='/images/me.jpg' padding='2em' />
       </Fill>
       <Fill>
         <br />
         <br />
-        <Text textAlign='left'>I like:</Text>
+        <Text textColor='primary' textAlign='left'>
+          I like:
+        </Text>
         <List textColor='primary'>
           <ListItem textSize='1em'>web technologies</ListItem>
           <ListItem textSize='1em'>playing the accordion</ListItem>
