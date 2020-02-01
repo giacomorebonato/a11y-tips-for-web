@@ -1,7 +1,7 @@
 import React from 'react'
 import { CodePane, Heading, Fill, Slide, Text, Layout } from 'spectacle'
 
-import { MySlide } from '../components/MySlide'
+import { MySlide } from '../components/my-slide'
 
 export const EmptyLinks = () => (
   <MySlide title='Empty links'>

@@ -8,14 +8,15 @@ import {
   Slide,
   Text,
   List,
-  ListItem
+  ListItem,
+  Fill,
+  Fit
 } from 'spectacle'
 
+import { MySlide } from '../components/my-slide'
+
 export const Contrast = () => (
-  <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={4}>
-      About contrast
-    </Heading>
+  <MySlide title='About contrast' withLayout={false}>
     <Text textColor='primary' textAlign='left'>
       Poor color contrast means that some people may have a hard time
       distinguishing between your text and the background color. These people
@@ -27,32 +28,23 @@ export const Contrast = () => (
       <ListItem>older set of eyes</ListItem>
       <ListItem>Adhd</ListItem>
     </List>
-  </Slide>
+  </MySlide>
 )
 
 export const ContrastAirbnbBefore = () => (
-  <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={4}>
-      What do you think?
-    </Heading>
+  <MySlide title='What do you think about this?'>
     <Image src='/images/contrast-1.png' />
-  </Slide>
+  </MySlide>
 )
 
 export const ContrastAirbnbAfter = () => (
-  <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={4}>
-      Yes... you guessed right
-    </Heading>
+  <MySlide title='Yes... you guessed right'>
     <Image src='/images/contrast-2.png' />
-  </Slide>
+  </MySlide>
 )
 
 export const ContrastTools = () => (
-  <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={4}>
-      Tools
-    </Heading>
+  <MySlide title='Tools'>
     <List>
       <ListItem>
         <a href='https://webaim.org/resources/contrastchecker/' target='_blank'>
@@ -61,11 +53,11 @@ export const ContrastTools = () => (
       </ListItem>
       <ListItem>Chrome inspector</ListItem>
     </List>
-  </Slide>
+  </MySlide>
 )
 
 export const ContrastQuote = () => (
-  <Slide transition={['fade']} bgColor='secondary'>
+  <MySlide title='Quote'>
     <BlockQuote>
       <Quote>
         If you fix your Contrast, you are already way more accessible than the
@@ -73,5 +65,5 @@ export const ContrastQuote = () => (
       </Quote>
       <Cite>Lindsey</Cite>
     </BlockQuote>
-  </Slide>
+  </MySlide>
 )

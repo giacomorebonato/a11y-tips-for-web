@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from 'spectacle'
 
-import { MySlide } from '../components/MySlide'
+import { MySlide } from '../components/my-slide'
 
 export const AboutLindsey = () => (
   <MySlide title='A11y with Lindsey'>

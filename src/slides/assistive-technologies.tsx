@@ -9,7 +9,7 @@ import {
   TableItem
 } from 'spectacle'
 
-import { MySlide } from '../components/MySlide'
+import { MySlide } from '../components/my-slide'
 
 export const Disabilities = () => (
   <MySlide title='Disabilities'>
