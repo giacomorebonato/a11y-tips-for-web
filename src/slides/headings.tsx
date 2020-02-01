@@ -2,31 +2,48 @@ import React from 'react'
 import {
   CodePane,
   Heading,
-  Image,
   Slide,
   Fill,
-  Layout,
+  Fit,
+  Text,
   List,
-  ListItem,
-  Text
+  ListItem
 } from 'spectacle'
 
+import { MySlide } from '../components/my-slide'
+
+const headingsHTML = `<h1>I am the title of a book</h1>
+<h2>I am the title of a chapter</h2>
+<h3>I am a sub section of a chapter</h3>`
+
 export const AboutHeadings = () => (
-  <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={4}>
-      Headings in the correct order
-    </Heading>
-    <Text textColor='primary'>Like if you were writing a book.</Text>
-    <div>
-      <CodePane
-        lang='html'
-        source={`
-        <h1>I am the title of a book</h1>
-        <h2>I am the title of a chapter</h2>
-        <h3>I am a sub section of a chapter</h3>
-      `}
-        style={{ fontSize: '1em' }}
-      />
-    </div>
-  </Slide>
+  <MySlide title='Headings in the correct order'>
+    <Fill>
+      <div>
+        <CodePane
+          lang='html'
+          source={headingsHTML}
+          style={{ fontSize: '0.8em' }}
+        />
+      </div>
+    </Fill>
+    <Fill style={{ marginLeft: '0.4em' }}>
+      <List style={{ marginTop: 0 }}>
+        <ListItem style={{ fontSize: '0.8em' }}>
+          Use only one h1 per page
+        </ListItem>
+        <ListItem style={{ fontSize: '0.8em' }}>
+          Use heading levels for the depth of content.
+        </ListItem>
+        <ListItem style={{ fontSize: '0.8em' }}>
+          Use heading levels for the depth of content.
+        </ListItem>
+        <ListItem style={{ fontSize: '0.8em' }}>Don't skip headings.</ListItem>
+      </List>
+
+      <Text textColor='primary' style={{ fontSize: '0.8em' }}>
+        Like if you were writing a book.
+      </Text>
+    </Fill>
+  </MySlide>
 )

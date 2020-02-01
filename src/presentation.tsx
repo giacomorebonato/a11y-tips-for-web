@@ -27,7 +27,7 @@ import {
   AssistiveTechnologies
 } from './slides/assistive-technologies'
 import { InputLabels, InputLabelsExample } from './slides/input-labels'
-import { OutlineIntro } from './slides/outline'
+import { LangAttribute } from './slides/lang-attribute'
 import { Questions } from './slides/end-questions'
 
 export default () => (
@@ -52,7 +52,7 @@ export default () => (
     <AboutHeadings />
     <InputLabels />
     <InputLabelsExample />
-    <OutlineIntro />
+    <LangAttribute />
     <Questions />
   </Deck>
 )
