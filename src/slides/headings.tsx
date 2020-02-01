@@ -13,9 +13,10 @@ import {
 
 export const AboutHeadings = () => (
   <Slide bgColor='secondary'>
-    <Heading textColor='tertiary' size={3}>
-      Use headings in the correct way
+    <Heading textColor='tertiary' size={4}>
+      Headings in the correct order
     </Heading>
+    <Text textColor='primary'>Like if you were writing a book.</Text>
     <div>
       <CodePane
         lang='html'

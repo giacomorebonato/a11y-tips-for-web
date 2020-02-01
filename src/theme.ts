@@ -1,6 +1,7 @@
 import createTheme from 'spectacle/lib/themes/default'
 
 require('normalize.css')
+require('./global.css')
 
 export const theme = createTheme(
   {

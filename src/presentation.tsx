@@ -5,13 +5,28 @@ import { Deck } from 'spectacle'
 import { theme } from './theme'
 
 import { AboutMe } from './slides/about-me'
-import { EmptyLinks, UseButtonInstead } from './slides/empty-links'
-import { AltAttributeIntro } from './slides/alt-attribute'
-import { AboutLindsey } from './slides/a11y-with-Lindsey'
+import {
+  EmptyLinks,
+  UseButtonInstead,
+  UseTheRightMarkup
+} from './slides/empty-links'
+import { AltAttributeIntro, ImageContextIsKey } from './slides/alt-attribute'
+import { AboutLindsey, LindseyPatreon } from './slides/a11y-with-Lindsey'
 import { AboutHeadings } from './slides/headings'
-import { Contrast, ContrastQuote } from './slides/contrast'
+import {
+  Contrast,
+  ContrastAirbnbBefore,
+  ContrastAirbnbAfter,
+  ContrastTools,
+  ContrastQuote
+} from './slides/contrast'
 import { Intro } from './slides/intro'
-import { InputLabels } from './slides/input-labels'
+import {
+  Disabilities,
+  OtherCases,
+  AssistiveTechnologies
+} from './slides/assistive-technologies'
+import { InputLabels, InputLabelsExample } from './slides/input-labels'
 import { OutlineIntro } from './slides/outline'
 import { Questions } from './slides/end-questions'
 
@@ -20,13 +35,23 @@ export default () => (
     <Intro />
     <AboutMe />
     <AboutLindsey />
+    <LindseyPatreon />
+    <Disabilities />
+    <OtherCases />
+    <AssistiveTechnologies />
     <Contrast />
+    <ContrastAirbnbBefore />
+    <ContrastAirbnbAfter />
+    <ContrastTools />
+    <ContrastQuote />
     <EmptyLinks />
     <UseButtonInstead />
+    <UseTheRightMarkup />
     <AltAttributeIntro />
+    <ImageContextIsKey />
     <AboutHeadings />
-    <ContrastQuote />
     <InputLabels />
+    <InputLabelsExample />
     <OutlineIntro />
     <Questions />
   </Deck>

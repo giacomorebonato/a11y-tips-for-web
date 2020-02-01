@@ -1,5 +1,6 @@
 import React from 'react'
-import { CodePane, Heading, Slide, Text } from 'spectacle'
+import { CodePane, Fill, Fit, Heading, Layout, Slide, Text } from 'spectacle'
+import styled from 'styled-components'
 
 export const InputLabels = () => (
   <Slide bgColor='secondary'>
@@ -20,5 +21,49 @@ export const InputLabels = () => (
         fontSize: '1em'
       }}
     />
+  </Slide>
+)
+
+const inputLabelHTML = `<label for="surname">
+  Surname
+</label>
+<input
+  id="surname"
+  placeholder="Write your surname"
+/>
+`
+
+const InputWrapper = styled.div`
+  background: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+  text-align: left;
+`
+
+export const InputLabelsExample = () => (
+  <Slide bgColor='secondary'>
+    <Heading size={3} textColor='tertiary'>
+      Example
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          style={{ fontSize: '1em', paddingRight: '1em' }}
+          lang='html'
+          source={inputLabelHTML}
+        />
+      </Fill>
+      <Fit
+        style={{
+          display: 'flex',
+          alignItems: 'center'
+        }}
+      >
+        <InputWrapper>
+          <label htmlFor='surname'>Surname</label>
+          <input placeholder='Write your surname' />
+        </InputWrapper>
+      </Fit>
+    </Layout>
   </Slide>
 )
