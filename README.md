@@ -2,9 +2,10 @@
 
 ## Description
 
-Presentation about accessibility in web
+Presentation about accessibility in web.  
+It is [published here](https://a11y-tips-for-web.web.app).
 
-## How to see it?
+## How to see it
 
 ```bash
 git clone https://github.com/giacomorebonato/a11y-tips-for-web
