@@ -2,10 +2,8 @@ import React from 'react'
 import {
   BlockQuote,
   Cite,
-  Heading,
   Image,
   Quote,
-  Slide,
   Text,
   List,
   ListItem,
