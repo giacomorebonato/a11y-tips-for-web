@@ -13,7 +13,7 @@ export const MySlide: React.FC<MySlideProps> = ({
   withLayout = true
 }) => (
   <Slide bgColor='secondary' textColor='primary'>
-    <Heading size={4} textColor='tertiary' style={{ marginBottom: '0.5em' }}>
+    <Heading size={5} textColor='tertiary' style={{ marginBottom: '0.5em' }}>
       {title}
     </Heading>
     {withLayout ? <Layout>{children}</Layout> : children}

@@ -62,7 +62,6 @@ export const UseButtonInstead = () => (
 
 const HTMLTags = `<header />
 <footer />
-<section />
 <fieldset />
 <content />
 <section />`
@@ -75,7 +74,7 @@ export const UseTheRightMarkup = () => (
     <Fill>
       <Text textColor='primary' textAlign='left'>
         HTML Markup is rich. Try to use the right element for the context (not
-        just ${`<div />`} everywhere).
+        just {`<div />`} everywhere).
       </Text>
     </Fill>
   </MySlide>

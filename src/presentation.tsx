@@ -24,7 +24,9 @@ import { Intro } from './slides/intro'
 import {
   Disabilities,
   OtherCases,
-  AssistiveTechnologies
+  AssistiveTechnologies,
+  XBoxAdaptive,
+  OtherAssistiveTechnologies
 } from './slides/assistive-technologies'
 import { InputLabels, InputLabelsExample } from './slides/input-labels'
 import { LangAttribute } from './slides/lang-attribute'
@@ -39,6 +41,8 @@ export default () => (
     <Disabilities />
     <OtherCases />
     <AssistiveTechnologies />
+    <XBoxAdaptive />
+    <OtherAssistiveTechnologies />
     <Contrast />
     <ContrastAirbnbBefore />
     <ContrastAirbnbAfter />
