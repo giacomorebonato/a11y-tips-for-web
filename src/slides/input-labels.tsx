@@ -33,12 +33,50 @@ const inputLabelHTML = `<label for="surname">
 />
 `
 
+const badInputLabelHTML = `<div>
+  <label>
+    Surname
+  </label>
+</div>
+<div>
+  <input name="surname" />
+</div>
+`
+
 const InputWrapper = styled.div`
   background: #fff;
   padding: 0.5em;
   border-radius: 5px;
   text-align: left;
 `
+
+export const InputLabelsBadExample = () => (
+  <Slide bgColor='secondary'>
+    <Heading size={3} textColor='tertiary'>
+      Bad example
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          style={{ fontSize: '1em', paddingRight: '1em' }}
+          lang='html'
+          source={badInputLabelHTML}
+        />
+      </Fill>
+      <Fit
+        style={{
+          display: 'flex',
+          alignItems: 'center'
+        }}
+      >
+        <InputWrapper>
+          <label htmlFor='surname'>Surname</label>
+          <input />
+        </InputWrapper>
+      </Fit>
+    </Layout>
+  </Slide>
+)
 
 export const InputLabelsExample = () => (
   <Slide bgColor='secondary'>

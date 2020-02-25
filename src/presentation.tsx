@@ -12,7 +12,7 @@ import {
 } from './slides/empty-links'
 import { AltAttributeIntro, ImageContextIsKey } from './slides/alt-attribute'
 import { AboutLindsey, LindseyPatreon } from './slides/a11y-with-Lindsey'
-import { AboutHeadings } from './slides/headings'
+import { AboutHeadings, HeadingsLikeABook } from './slides/headings'
 import {
   Contrast,
   ContrastAirbnbBefore,
@@ -28,7 +28,11 @@ import {
   XBoxAdaptive,
   OtherAssistiveTechnologies
 } from './slides/assistive-technologies'
-import { InputLabels, InputLabelsExample } from './slides/input-labels'
+import {
+  InputLabels,
+  InputLabelsExample,
+  InputLabelsBadExample
+} from './slides/input-labels'
 import { LangAttribute } from './slides/lang-attribute'
 import { Questions } from './slides/end-questions'
 
@@ -54,7 +58,9 @@ export default () => (
     <AltAttributeIntro />
     <ImageContextIsKey />
     <AboutHeadings />
+    <HeadingsLikeABook />
     <InputLabels />
+    <InputLabelsBadExample />
     <InputLabelsExample />
     <LangAttribute />
     <Questions />

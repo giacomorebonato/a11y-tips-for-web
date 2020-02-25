@@ -4,8 +4,8 @@ import { CodePane, Heading, Fill, Slide, Text, Layout } from 'spectacle'
 import { MySlide } from '../components/my-slide'
 
 export const EmptyLinks = () => (
-  <MySlide title='Empty links'>
-    <Fill>
+  <MySlide title='Empty links' withLayout>
+    <Fill style={{ display: 'flex', alignItems: 'center' }}>
       <CodePane
         style={{ fontSize: '1em', paddingRight: '1em' }}
         lang='html'
@@ -14,7 +14,7 @@ export const EmptyLinks = () => (
     </Fill>
     <Fill>
       <Text textColor='primary' textAlign='left'>
-        This element is not a link...
+        This element is not a <a href='#'>link...</a>
         <br />
         Otherwise it would have a URL specified in the href attribute.
       </Text>

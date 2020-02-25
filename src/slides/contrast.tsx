@@ -50,6 +50,14 @@ export const ContrastTools = () => (
         </a>
       </ListItem>
       <ListItem>Chrome inspector</ListItem>
+      <ListItem>
+        <a
+          target='_blank'
+          href='https://developers.google.com/web/tools/lighthouse'
+        >
+          Lighthouse tool
+        </a>
+      </ListItem>
     </List>
   </MySlide>
 )
