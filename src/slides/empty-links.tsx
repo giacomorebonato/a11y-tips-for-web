@@ -62,6 +62,7 @@ export const UseButtonInstead = () => (
 
 const HTMLTags = `<header />
 <footer />
+<nav />
 <fieldset />
 <content />
 <section />`

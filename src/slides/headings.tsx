@@ -48,7 +48,6 @@ export const HeadingsLikeABook = () => (
     <List style={{ marginTop: 0 }}>
       <MyListItem>Use only one h1 per page</MyListItem>
       <MyListItem>Use heading levels for the depth of content.</MyListItem>
-      <MyListItem>Use heading levels for the depth of content.</MyListItem>
       <MyListItem>Don't skip headings.</MyListItem>
     </List>
   </MySlide>

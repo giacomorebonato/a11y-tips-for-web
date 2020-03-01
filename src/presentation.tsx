@@ -34,7 +34,7 @@ import {
   InputLabelsBadExample
 } from './slides/input-labels'
 import { LangAttribute } from './slides/lang-attribute'
-import { Questions } from './slides/end-questions'
+import { PresentationLinks, Questions } from './slides/end-questions'
 
 export default () => (
   <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
@@ -63,6 +63,7 @@ export default () => (
     <InputLabelsBadExample />
     <InputLabelsExample />
     <LangAttribute />
+    <PresentationLinks />
     <Questions />
   </Deck>
 )
